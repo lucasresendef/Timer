@@ -3,31 +3,26 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
 body{
     background-color: black;
     color: white;
     text-align: center;
 }
-
 h1{
     padding: 4rem;
 }
-
 a{
     background-color: white;
     text-align: center;
     padding-top: 1.25rem;
     border-radius: 2rem;
-    width: 20rem;
+    width: 12rem;
     height: 5rem;
     text-decoration: none;
     color: black;
     font-size: 25pt;
-    margin-top: 1.5rem;
-    
+    margin-top: 1.5rem; 
 }
-
 .buttons{
     display: flex;
     flex-direction: column;
