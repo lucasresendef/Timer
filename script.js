@@ -2,6 +2,8 @@ const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 15;
 const ALERT_THRESHOLD = 8;
 
+var audio = new Audio('stop.mp3');
+
 const COLOR_CODES = {
   info: {
     color: "blue"
@@ -50,6 +52,7 @@ startTimer();
 
 function onTimesUp() {
   clearInterval(timerInterval);
+  
 }
 
 function startTimer() {
@@ -63,7 +66,9 @@ function startTimer() {
     setRemainingPathColor(timeLeft);
 
     if (timeLeft === 0) {
+      audio.play();
       onTimesUp();
+      
     }
   }, 1000);
 }
